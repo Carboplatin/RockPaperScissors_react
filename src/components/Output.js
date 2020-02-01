@@ -1,14 +1,39 @@
 import React from 'react'
 
 const Output = ({results})=> {
-    const compareResults = results
+  
+    const resultsList = results.map(content => {
+        
+        return (
+            <div key={content.id}>
+                <div> {content.content}</div>
+                
+            </div>
+        )
+    })
+
+    handleClick() {
+        this.setState;
+    }
 
     return (
+       
         <div>
-           <h1>Results</h1>     
+            
+            
+            <button onClick = {handleClick} >TEST</button>
+
+           
+            
         </div>
     )
+
+
+
+
 }
+
+
 
 
 
