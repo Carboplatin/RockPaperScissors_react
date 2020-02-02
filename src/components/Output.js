@@ -12,17 +12,15 @@ const Output = ({results})=> {
         )
     })
 
-    handleClick() {
-        this.setState;
-    }
+   
 
     return (
        
         <div>
             
             
-            <button onClick = {handleClick} >TEST</button>
-
+            <button >TEST</button>
+            {resultsList}
            
             
         </div>

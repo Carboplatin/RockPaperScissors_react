@@ -14,9 +14,9 @@ class Buttons extends Component {
     render () {
         return (
             <div>
-                    <button>Test1</button>
-                    <button>Test2</button>
-                    <button>Test3</button>
+                    <button>Paper</button>
+                    <button>Rock</button>
+                    <button>Scissors</button>
             </div>
         )
     }
