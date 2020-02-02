@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Buttons from './components/Buttons'
+// import Buttons from './components/Buttons'
 import Output from './components/Output'
 import './App.css';
 
@@ -13,13 +13,15 @@ class App extends Component {
         ]
     }
 
-
+    compareContent = (content) => {
+       console.log(content)
+    }
 
     render ( ) {
         return (
             <div className="container">
-                <Buttons />
-                <Output results={this.state.results} />
+                {/* <Buttons /> */}
+                <Output results={this.state.results}  compareContent={this.compareContent}/>
             </div>
         )
     }

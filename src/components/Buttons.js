@@ -1,25 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 
-class Buttons extends Component {
-    state= {
-        results: [
-            {id: 4, content:'rock' },
-            {id: 5, content:'paper' },
-            {id: 6, content:'scissors' },
-        ]
-    }
+// const Buttons =({compareContent}) => {
 
+//     const Compare = results.map(content => {
+        
+//         return (
+//             <div key={content.id}>
+                
+//                 <button onClick={() => {compareContent(content.content)}}> {content.content} Paper</button>
+//                 <button onClick={() => {compareContent(content.content)}}> {content.content} Rock</button>
+//                 <button onClick={() => {compareContent(content.content)}}> {content.content} Scissors</button>
+//             </div>
+//         )
+//     })
 
-    render () {
-        return (
-            <div>
-                    <button>Paper</button>
-                    <button>Rock</button>
-                    <button>Scissors</button>
-            </div>
-        )
-    }
-}
+   
+//         return (
+//             <div>
+//                    {Compare}
+//             </div>
+//         )
+    
+// }
 
-export default Buttons
+// export default Buttons
