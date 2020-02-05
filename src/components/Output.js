@@ -1,21 +1,24 @@
 import React from 'react'
 
-const Output = ({results, compareContent })=> {
+const Output = ({results})=> {
   
     const resultsList = results.map(content => {
         
         return (
-            <div key={content.id}>
-                <div> {content.content}</div>
-                <button onClick={() => {compareContent(content.content)}}> {content.content}</button>
-                {/* <button onClick={() => {compareContent(content.content)}}> {content.content} Rock</button>
-                <button onClick={() => {compareContent(content.content)}}> {content.content} Scissors</button> */}
-                
-            </div>
+            <button onClick={content.content}>Content Button</button>
+            // <div key={content.id}>
+            //     <div> {content.content}</div>
+            // </div>
         )
         
     })
+    
+    
 
+    hello = () => {
+        return  "hello world" 
+    }
+    
     // return items[Math.floor(Math.random()*items.length)];
 
     return (
@@ -23,7 +26,7 @@ const Output = ({results, compareContent })=> {
         <div>
             
             
-            <button className="paper">TEST paper</button>
+            <button className="paper">TEST paper {resultsList} </button>
             {resultsList}
            
             
