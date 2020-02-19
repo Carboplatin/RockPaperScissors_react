@@ -1,45 +1,42 @@
 import React from 'react'
 
-const Output = ({results})=> {
-  
-    const resultsList = results.map(content => {
-        
+const Output = ({choices})=> {
+    console.log(choices)
+
+    const choicesList = choices.map((results)=>{
         return (
-            <button onClick={content.content}>Content Button</button>
-            // <div key={content.id}>
-            //     <div> {content.content}</div>
-            // </div>
+            <div>
+                <div>Choice: {results.choice1}</div>
+                {/* <div>Choice: {results.choice2}</div>
+                <div>Choice: {results.choice3}</div> */}
+               
+            </div>
         )
-        
     })
     
-    
-
-    hello = () => {
-        return  "hello world" 
-    }
-    
-    // return items[Math.floor(Math.random()*items.length)];
-
     return (
-       
-        <div>
-            
-            
-            <button className="paper">TEST paper {resultsList} </button>
-            {resultsList}
+        <h1>{choicesList}</h1>
            
-            
-        </div>
+        
     )
-
-
-
-
 }
-
-
-
-
+     
+            
+            
+            
+           
 
 export default Output
+
+
+
+
+   
+
+    
+    
+    
+
+
+
+

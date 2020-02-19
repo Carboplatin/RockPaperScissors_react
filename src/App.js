@@ -7,21 +7,20 @@ import './App.css';
 class App extends Component {
     state= {
         results: [
-            {id: 1, content:'rock' },
-            {id: 2, content:'paper' },
-            {id: 3, content:'scissors' },
+            {id: 1, choice1:'rock' },
+            {id: 2, choice2:'paper' },
+            {id: 3, choice3:'scissors' },
         ]
     }
 
-    compareContent = (content) => {
-       console.log(content)
-    }
+   
 
-    render ( ) {
+    render () {
         return (
             <div className="container">
-                {/* <Buttons /> */}
-                <Output results={this.state.results}  compareContent={this.compareContent}/>
+                
+                <Output choices={this.state.results}/>
+                
             </div>
         )
     }
